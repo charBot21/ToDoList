@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.update.UpdateFragment"
+        android:background="@color/white"
+        android:padding="@dimen/big_padding">
+
+        <EditText
+            android:id="@+id/etTitleUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="@dimen/txt_general_min"
+            android:autoSizeMinTextSize="@dimen/txt_general_max"
+            android:autoSizeStepGranularity="@dimen/txt_steps_size"
+            android:autoSizeTextType="uniform"
+            android:autofillHints=""
+            android:drawablePadding="@dimen/mili_padding"
+            android:fontFamily="@font/poppins_light"
+            android:hint="@string/title_not"
+            android:inputType="text"
+            android:textColor="@color/generalGray"
+            android:textColorHighlight="@color/generalGray"
+            android:textColorHint="@color/generalGray"
+            android:textColorLink="@color/generalGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/etDescriptionUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding"
+            android:autoSizeMaxTextSize="@dimen/txt_general_min"
+            android:autoSizeMinTextSize="@dimen/txt_general_max"
+            android:autoSizeStepGranularity="@dimen/txt_steps_size"
+            android:autoSizeTextType="uniform"
+            android:autofillHints=""
+            android:drawablePadding="@dimen/mili_padding"
+            android:fontFamily="@font/poppins_light"
+            android:hint="@string/desc_note"
+            android:inputType="text"
+            android:textColor="@color/generalGray"
+            android:textColorHighlight="@color/generalGray"
+            android:textColorHint="@color/generalGray"
+            android:textColorLink="@color/generalGray"
+            app:layout_constraintEnd_toEndOf="@+id/etTitleUpdate"
+            app:layout_constraintStart_toStartOf="@+id/etTitleUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/etTitleUpdate"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/buttonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xx_big_padding"
+            android:autoSizeMaxTextSize="@dimen/txt_button_max"
+            android:autoSizeMinTextSize="@dimen/txt_button_min"
+            android:autoSizeStepGranularity="@dimen/txt_steps_size"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/etDescriptionUpdate"
+            app:layout_constraintStart_toStartOf="@+id/etDescriptionUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/etDescriptionUpdate"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/buttonDeleteTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_padding"
+            android:autoSizeMaxTextSize="@dimen/txt_button_max"
+            android:autoSizeMinTextSize="@dimen/txt_button_min"
+            android:autoSizeStepGranularity="@dimen/txt_steps_size"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnUpdate"
+            app:layout_constraintStart_toStartOf="@+id/btnUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/btnUpdate"
+            tools:targetApi="o" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
